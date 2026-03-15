@@ -44,12 +44,8 @@
 						$response = curl_exec($ch);
 						$code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 						curl_close($ch);
-						
-						echo $data;
 
-						$stmt_createnewserver = $con->prepare("DELETE FROM `active_servers` WHERE `server_jobid` = ?;");
-						$stmt_createnewserver->bind_param("s", $_GET['jobID']);
-						$stmt_createnewserver->execute();
+						echo $data;
 
 						if($code != 200) {
 							die(http_response_code(503));

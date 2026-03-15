@@ -86,12 +86,12 @@
 									17,
 									"Created splash screen #18 for the studio!"
 								); ?>
-							</tr>
-							<tr>
 								<?php CreateProfile(
 									46,
 									"Created most of the client icons that aren't 2016 !!!!!"
 								); ?>
+							</tr>
+							<tr>
 								<?php CreateProfile(
 									5,
 									"Created the emote music for dywec, californiagurls and caramelldansen!!!"
@@ -100,8 +100,6 @@
 									48,
 									"Created the badge icons you see on the site!"
 								); ?>
-							</tr>
-							<tr>
 								<?php CreateProfile(
 									72,
 									"Created the topbar icons you see in the client!"

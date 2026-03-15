@@ -32,7 +32,7 @@
 							"pid" => $row['server_pid']
 						]);
 
-						$ch = curl_init("http://$arbiter_ip:7000/api/v1/gameserver/kill");
+						$ch = curl_init("http://$arbiter_ip/api/v1/gameserver/kill");
 						curl_setopt($ch, CURLOPT_HTTPHEADER, [
 							"Authorization: Bearer $arbiter_token",
 							"Content-Type: application/json",

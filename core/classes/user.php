@@ -69,6 +69,7 @@
 		public bool $setprofilepicture;
 		public string $currentoutfitmd5;
 		public string $usercss;
+		public string $profilebgm;
 		public DateTime $join_date;
 		
 		/**
@@ -149,7 +150,7 @@
 			$this->currentoutfitmd5 = strval($rowdata['user_currentappearancemd5']);
 			$this->usercss = strval($rowdata['user_css']);
 			$this->join_date = DateTime::createFromFormat("Y-m-d H:i:s", $rowdata['user_joindate']);
-			
+			$this->profilebgm = $rowdata['user_profilebgm'] ?? '';
 			$this->password = strval($rowdata['user_password']);
 			$this->security_key = strval($rowdata['user_security']);
 		}
